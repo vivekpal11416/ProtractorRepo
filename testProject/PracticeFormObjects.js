@@ -23,7 +23,7 @@ describe('this Suite consistes of cases for filling the Test form',function () {
         obj.getYearsOfExp('6');
         obj.dateValue.sendKeys('10/10/20');
         obj.profession.click();
-
+        console.log('new line added');
         browser.takeScreenshot().then(function (png) {
             writeScreenShot(png, 'exception.png');
         });
